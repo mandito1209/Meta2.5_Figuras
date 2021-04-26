@@ -16,18 +16,16 @@ public class Prueba {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int c = 0;
+         int c = 0;
         String color = "", o = "";
+        Collage figuras = new Collage();
         while (!o.equals("F")) {
-            Collage figuras = new Collage();
             if (o.equals("M")) {
                 color = "magenta";
                 figuras.cambiarColor(c, color);
-                o=opcion(o);
             } else if (o.equals("N")) {
                 color = "orange";
                 figuras.cambiarColor(c, color);
-                o=opcion(o);
             } else {
                 switch (c) {
                     case 0:
@@ -49,8 +47,11 @@ public class Prueba {
                         figuras.crearTrapecios();
                         break;
                 }
-                o=opcion(o);
+            }
+            o=opcion(o);
+            if(o.equals("A") || o.equals("R") || o.equals("G")) {
                 figuras.limpiar(c);
+                figuras = new Collage();
             }
             if (o.equals("A")) c = c + 1;
             else if (o.equals("R")) c = c - 1;

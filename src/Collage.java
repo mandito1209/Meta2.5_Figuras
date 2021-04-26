@@ -178,7 +178,6 @@ public class Collage {
         }
     }
     public void cambiarColor(int c,String color) {
-        if(color.equals("M") || color.equals("N") ) {
             for (int i = 0; i < 20; i++) {
                 switch (c) {
                     case 0:
@@ -201,7 +200,6 @@ public class Collage {
                         break;
                 }
             }
-        }
     }
         public void colorTodo(String color) {
             for (int i = 0; i < 20; i++) {

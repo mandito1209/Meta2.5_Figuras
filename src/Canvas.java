@@ -134,6 +134,9 @@ public class Canvas {
         else if(colorString.equals("white")) {
             graphic.setColor(Color.white);
         }
+         else if(colorString.equals("orange")){
+            graphic.setColor(Color.orange);
+        }
         else {
             graphic.setColor(Color.black);
         }
